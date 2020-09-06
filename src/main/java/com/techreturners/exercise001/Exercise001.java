@@ -14,7 +14,15 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        return 0.0;
+        double num = (originalPrice + (originalPrice * vatRate / 100));
+
+        if(Math.abs(num-Math.floor(num)) < 0.001){
+            int truncatedNumberInt = (int)num;
+            return truncatedNumberInt;
+        } else {
+            num = Math.floor(num * 100) / 100;
+            return num;
+        }
     }
 
     public String reverse(String sentence) {
