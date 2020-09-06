@@ -8,7 +8,9 @@ public class Exercise001 {
     }
 
     public String generateInitials(String firstName, String lastName) {
-        return "";
+        char ini1 = firstName.charAt(0);
+        char ini2 = lastName.charAt(0);
+        return ini1+"."+ini2;
     }
 
     public double addVat(double originalPrice, double vatRate) {
