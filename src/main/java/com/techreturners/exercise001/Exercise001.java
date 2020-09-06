@@ -26,7 +26,13 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        return "";
+
+        String reverse = "";
+        for(int i = sentence.length() - 1; i >= 0; i--)
+        {
+          reverse = reverse + sentence.charAt(i);
+        }
+        return reverse;
     }
 
     public int countLinuxUsers(List<User> users) {
