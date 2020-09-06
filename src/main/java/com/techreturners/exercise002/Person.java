@@ -16,4 +16,8 @@ public class Person {
     public String getCity() {
         return city;
     }
+
+    public int getAge() {
+        return age;
+    }
 }
