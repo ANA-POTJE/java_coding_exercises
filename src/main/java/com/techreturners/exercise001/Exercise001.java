@@ -26,7 +26,6 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-
         String reverse = "";
         for(int i = sentence.length() - 1; i >= 0; i--)
         {
@@ -36,6 +35,12 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        return 0;
+        int count = 0;
+        for(User u1 : users) {
+            if (u1.getType() == "Linux") {
+                count += 1;
+            }
+        }
+        return count;
     }
 }

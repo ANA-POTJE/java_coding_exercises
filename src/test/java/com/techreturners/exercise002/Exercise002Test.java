@@ -15,7 +15,7 @@ public class Exercise002Test {
         //Person p1 = new Person("Peter", "Smith", "Manchester", 23);
         //Person p2 = new Person("Susan", "Farmer", "Leeds", 23);
 
-        assertEquals(true, ex002.isFromManchester(/* p1 */ ));
+        assertEquals(true, ex002.isFromManchester(/* p1 */));
         assertEquals(false, ex002.isFromManchester(/* p2 */ ));
     }
 
